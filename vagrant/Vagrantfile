@@ -9,7 +9,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "bento/ubuntu-18.04"
+  #config.vm.box = "bento/ubuntu-18.04"
+  config.vm.box = "boss-box-rails"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -21,7 +22,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.33.11"
 
   # Setting a hostname
-  config.vm.hostname = "rails-box"
+  config.vm.hostname = "rails-box.local"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
